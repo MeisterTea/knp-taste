@@ -1,0 +1,99 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/45968eff/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+HomeStack	navigation/MainTabNavigator.js	/^const HomeStack = createStackNavigator({$/;"	C
+tabBarLabel	navigation/MainTabNavigator.js	/^  tabBarLabel: 'Home',$/;"	p	class:HomeStack.navigationOptions
+tabBarIcon	navigation/MainTabNavigator.js	/^  tabBarIcon: ({ focused }) => ($/;"	p	class:HomeStack.navigationOptions
+navigationOptions	navigation/MainTabNavigator.js	/^HomeStack.navigationOptions = {$/;"	c	class:HomeStack
+LinksStack	navigation/MainTabNavigator.js	/^const LinksStack = createStackNavigator({$/;"	C
+tabBarLabel	navigation/MainTabNavigator.js	/^  tabBarLabel: 'Links',$/;"	p	class:LinksStack.navigationOptions
+tabBarIcon	navigation/MainTabNavigator.js	/^  tabBarIcon: ({ focused }) => ($/;"	p	class:LinksStack.navigationOptions
+navigationOptions	navigation/MainTabNavigator.js	/^LinksStack.navigationOptions = {$/;"	c	class:LinksStack
+SettingsStack	navigation/MainTabNavigator.js	/^const SettingsStack = createStackNavigator({$/;"	C
+tabBarLabel	navigation/MainTabNavigator.js	/^  tabBarLabel: 'Settings',$/;"	p	class:SettingsStack.navigationOptions
+tabBarIcon	navigation/MainTabNavigator.js	/^  tabBarIcon: ({ focused }) => ($/;"	p	class:SettingsStack.navigationOptions
+navigationOptions	navigation/MainTabNavigator.js	/^SettingsStack.navigationOptions = {$/;"	c	class:SettingsStack
+name	app.json	/^    "name": "Knp Taste",$/;"	s	object:expo
+slug	app.json	/^    "slug": "knp-taste",$/;"	s	object:expo
+privacy	app.json	/^    "privacy": "public",$/;"	s	object:expo
+sdkVersion	app.json	/^    "sdkVersion": "32.0.0",$/;"	s	object:expo
+0	app.json	/^      "ios",$/;"	s	array:expo.platforms
+1	app.json	/^      "android"$/;"	s	array:expo.platforms
+platforms	app.json	/^    "platforms": [$/;"	a	object:expo
+version	app.json	/^    "version": "1.0.0",$/;"	s	object:expo
+orientation	app.json	/^    "orientation": "portrait",$/;"	s	object:expo
+icon	app.json	/^    "icon": ".\/assets\/images\/icon.png",$/;"	s	object:expo
+image	app.json	/^      "image": ".\/assets\/images\/splash.png",$/;"	s	object:expo.splash
+resizeMode	app.json	/^      "resizeMode": "contain",$/;"	s	object:expo.splash
+backgroundColor	app.json	/^      "backgroundColor": "#ffffff"$/;"	s	object:expo.splash
+splash	app.json	/^    "splash": {$/;"	o	object:expo
+fallbackToCacheTimeout	app.json	/^      "fallbackToCacheTimeout": 0$/;"	n	object:expo.updates
+updates	app.json	/^    "updates": {$/;"	o	object:expo
+0	app.json	/^      "**\/*"$/;"	s	array:expo.assetBundlePatterns
+assetBundlePatterns	app.json	/^    "assetBundlePatterns": [$/;"	a	object:expo
+supportsTablet	app.json	/^      "supportsTablet": true$/;"	b	object:expo.ios
+ios	app.json	/^    "ios": {$/;"	o	object:expo
+expo	app.json	/^  "expo": {$/;"	o
+tintColor	constants/Colors.js	/^const tintColor = '#2f95dc';$/;"	C
+width	constants/Layout.js	/^const width = Dimensions.get('window').width;$/;"	C
+height	constants/Layout.js	/^const height = Dimensions.get('window').height;$/;"	C
+TabBarIcon	components/TabBarIcon.js	/^export default class TabBarIcon extends React.Component {$/;"	c
+render	components/TabBarIcon.js	/^  render() {$/;"	m	class:TabBarIcon
+MonoText	components/StyledText.js	/^export class MonoText extends React.Component {$/;"	c
+render	components/StyledText.js	/^  render() {$/;"	m	class:MonoText
+SettingsScreen	screens/SettingsScreen.js	/^export default class SettingsScreen extends React.Component {$/;"	c
+render	screens/SettingsScreen.js	/^  render() {$/;"	m	class:SettingsScreen
+HomeScreen	screens/HomeScreen.js	/^export default class HomeScreen extends React.Component {$/;"	c
+render	screens/HomeScreen.js	/^  render() {$/;"	m	class:HomeScreen
+_maybeRenderDevelopmentModeWarning	screens/HomeScreen.js	/^  _maybeRenderDevelopmentModeWarning() {$/;"	m	class:HomeScreen
+styles	screens/HomeScreen.js	/^const styles = StyleSheet.create({$/;"	C
+LinksScreen	screens/LinksScreen.js	/^export default class LinksScreen extends React.Component {$/;"	c
+render	screens/LinksScreen.js	/^  render() {$/;"	m	class:LinksScreen
+styles	screens/LinksScreen.js	/^const styles = StyleSheet.create({$/;"	C
+devToolsPort	.expo/packager-info.json	/^  "devToolsPort": 19002,$/;"	n
+expoServerPort	.expo/packager-info.json	/^  "expoServerPort": 19000,$/;"	n
+packagerPort	.expo/packager-info.json	/^  "packagerPort": 19001,$/;"	n
+packagerPid	.expo/packager-info.json	/^  "packagerPid": 20818,$/;"	n
+expoServerNgrokUrl	.expo/packager-info.json	/^  "expoServerNgrokUrl": "https:\/\/cx-bd3.anonymous.knp-taste.exp.direct",$/;"	s
+packagerNgrokUrl	.expo/packager-info.json	/^  "packagerNgrokUrl": "https:\/\/packager.cx-bd3.anonymous.knp-taste.exp.direct",$/;"	s
+ngrokPid	.expo/packager-info.json	/^  "ngrokPid": 20891$/;"	n
+hostType	.expo/settings.json	/^  "hostType": "lan",$/;"	s
+lanType	.expo/settings.json	/^  "lanType": "ip",$/;"	s
+dev	.expo/settings.json	/^  "dev": true,$/;"	b
+minify	.expo/settings.json	/^  "minify": false,$/;"	b
+urlRandomness	.expo/settings.json	/^  "urlRandomness": "cx-bd3"$/;"	s
+App	App.js	/^export default class App extends React.Component {$/;"	c
+render	App.js	/^  render() {$/;"	m	class:App
+styles	App.js	/^const styles = StyleSheet.create({$/;"	C
+exports	babel.config.js	/^module.exports = function(api) {$/;"	f	function:module
+main	package.json	/^  "main": "node_modules\/expo\/AppEntry.js",$/;"	s
+start	package.json	/^    "start": "expo start",$/;"	s	object:scripts
+android	package.json	/^    "android": "expo start --android",$/;"	s	object:scripts
+ios	package.json	/^    "ios": "expo start --ios",$/;"	s	object:scripts
+eject	package.json	/^    "eject": "expo eject",$/;"	s	object:scripts
+test	package.json	/^    "test": "node .\/node_modules\/jest\/bin\/jest.js --watchAll"$/;"	s	object:scripts
+scripts	package.json	/^  "scripts": {$/;"	o
+preset	package.json	/^    "preset": "jest-expo"$/;"	s	object:jest
+jest	package.json	/^  "jest": {$/;"	o
+@expo/samples	package.json	/^    "@expo\/samples": "2.1.1",$/;"	s	object:dependencies
+expo	package.json	/^    "expo": "^32.0.0",$/;"	s	object:dependencies
+react	package.json	/^    "react": "16.5.0",$/;"	s	object:dependencies
+react-native	package.json	/^    "react-native": "https:\/\/github.com\/expo\/react-native\/archive\/sdk-32.0.0.tar.gz",$/;"	s	object:dependencies
+react-navigation	package.json	/^    "react-navigation": "^3.0.9"$/;"	s	object:dependencies
+dependencies	package.json	/^  "dependencies": {$/;"	o
+babel-preset-expo	package.json	/^    "babel-preset-expo": "^5.0.0",$/;"	s	object:devDependencies
+jest-expo	package.json	/^    "jest-expo": "^32.0.0"$/;"	s	object:devDependencies
+devDependencies	package.json	/^  "devDependencies": {$/;"	o
+private	package.json	/^  "private": true$/;"	b
+KNP Taste guidelines	README.md	/^# KNP Taste guidelines$/;"	c
+Expected features	README.md	/^## Expected features$/;"	s
+Minimal scenarios that has to be covered	README.md	/^### Minimal scenarios that has to be covered$/;"	S
+Other ideas	README.md	/^### Other ideas$/;"	S
+Expected delivery	README.md	/^## Expected delivery$/;"	s
+To begin	README.md	/^## To begin$/;"	s
+Icing on the cake	README.md	/^## Icing on the cake$/;"	s
+General reccomandations	README.md	/^## General reccomandations$/;"	s
