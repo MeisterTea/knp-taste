@@ -1,7 +1,7 @@
 import { compose } from 'redux'
 import { connect } from 'react-redux'
 import { withNavigation } from 'react-navigation'
-import { setTitle } from '../../store/modules/todo'
+import { setTitle } from '../../modules/todo'
 import TodoEditor from './TodoEditor'
 
 const mapStateToProps = state => ({

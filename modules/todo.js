@@ -1,9 +1,8 @@
 import { append, evolve } from 'ramda'
-import NavigationService from '../../navigation/NavigationService'
 
-const OPEN_TODO_EDITOR = 'OPEN_TODO_EDITOR'
-const ADD_TODO = 'ADD_TODO'
-const SET_TITLE = 'SET_TITLE'
+export const OPEN_TODO_EDITOR = 'OPEN_TODO_EDITOR'
+export const ADD_TODO = 'ADD_TODO'
+export const SET_TITLE = 'SET_TITLE'
 
 const INITIAL_STATE = {
   editTodo: {
@@ -36,11 +35,6 @@ const todos = (state = INITIAL_STATE, action) => {
           content
         }, state.todos)
       }
-    }
-    case OPEN_TODO_EDITOR: {
-      const { id } = action
-      NavigationService.navigate('TodoEditor', { id })
-      return state
     }
     case SET_TITLE: {
       return {
