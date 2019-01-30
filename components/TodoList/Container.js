@@ -1,20 +1,19 @@
 import { compose } from 'redux'
 import { connect } from 'react-redux'
 import { withNavigation } from 'react-navigation'
-import { setTitle, setContent } from '../../modules/todo'
-import TodoEditor from './TodoEditor'
+import { openTodoEditor } from '../../modules/todo'
+import TodoList from './TodoList'
 
 const mapStateToProps = state => ({
   editTodo: state.todo.editTodo
 })
 
 const mapDispatchToProps = dispatch => ({
-  setTitle: title => dispatch(setTitle(title)),
-  setContent: content => dispatch(setContent(content))
+  openTodoEditor: id => dispatch(openTodoEditor(id))
 })
 
 export default compose(
   withNavigation,
-  connect(mapStateToProps, mapDispatchToProps),
-)(TodoEditor)
+  connect(mapStateToProps, mapDispatchToProps)
+)(TodoList)
 

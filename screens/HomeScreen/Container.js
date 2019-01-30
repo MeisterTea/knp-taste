@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 import { compose } from 'redux'
 import HomeScreen from './HomeScreen'
-import { openTodoEditor } from '../../store/modules/todo'
+import { openTodoEditor } from '../../modules/todo'
 
 const mapStateToProps = state => ({
   todos: state.todo.todos
