@@ -2,11 +2,11 @@ import React from 'react'
 import { StyleSheet, View, Text, TextInput } from 'react-native'
 import PropTypes from 'prop-types'
 
-const TitledTextInput = props =>
+const TitledTextInput = ({ value, title, onChangeText }) =>
   <View style={ styles.titledTextInput }>
-    <Text style={ styles.title }>{ props.title }</Text>
-    <TextInput onChangeText={ props.onChangeText }
-      value={ props.value }
+    <Text style={ styles.title }>{ title }</Text>
+    <TextInput onChangeText={ onChangeText }
+      value={ value }
       style={ styles.input }/>
   </View>
 
