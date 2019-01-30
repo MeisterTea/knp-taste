@@ -37,7 +37,7 @@ const getInitialState = () => ({
 const todos = (state = getInitialState(), action) => {
   switch (action.type) {
     case LOAD_TODO: {
-      const editTodo = state.todos.filter(todo => todo.id === action.id)
+      const editTodo = state.todos.filter(todo => todo.id === action.id)[0]
       return {
         ...state,
         editTodo
