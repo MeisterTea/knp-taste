@@ -42,12 +42,12 @@ const setIdEpic = (action$, state$) => action$.pipe(
 const updateEpic = (action$, state$) => action$.pipe(
   ofType(SET_ID, SET_TITLE, SET_CONTENT),
   filter(() => state$.value.todo.editTodo.id !== null),
-  map(() => {
-    const { todos, editTodo } = state$.value.todo
-    const todoIndex = todos.findIndex(todo => todo.id === editTodo.id)
-    if (todoIndex === -1) return addTodo()
-    return updateTodo(todoIndex)
-  })
+  map(() => ({ ...state$.value.todo })),
+  map(({ todos, editTodo }) => todos.findIndex(todo => todo.id === editTodo.id)),
+  map(todoIndex => todoIndex === -1
+    ? addTodo()
+    : updateTodo(todoIndex)
+  )
 )
 
 export default combineEpics(
