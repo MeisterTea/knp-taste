@@ -14,6 +14,7 @@ module.exports = {
   ],
   'rules': {
     "indent": ["error", 2, {"SwitchCase": 1, "ignoredNodes": ["JSXElement"]}],
+    'no-trailing-spaces': 'error',
     "react/jsx-indent": ["error", 2],
     'brace-style': ['error'],
     'curly': ['error', 'multi-line'],
