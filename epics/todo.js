@@ -25,11 +25,9 @@ const openTodoEditorEpic = action$ => action$.pipe(
   ofType(OPEN_TODO_EDITOR),
   map(action => action.id),
   map(id => {
-    if (id !== null) {
-      return loadTodo(id)
-    } else {
-      return resetTodoEditor()
-    }
+    return id !== null
+      ? loadTodo(id)
+      : resetTodoEditor()
   }),
   tap(() => NavigationService.navigate('TodoEditor'))
 )
