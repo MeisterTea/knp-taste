@@ -1,11 +1,11 @@
 import { compose } from 'redux'
 import { connect } from 'react-redux'
 import { withNavigation } from 'react-navigation'
-import { setTitle } from '../../store/reducers/todoReducer'
+import { setTitle } from '../../store/modules/todo'
 import TodoEditor from './TodoEditor'
 
 const mapStateToProps = state => ({
-  editTodo: state.todos.editTodo
+  editTodo: state.todo.editTodo
 })
 
 const mapDispatchToProps = dispatch => ({

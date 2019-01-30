@@ -1,3 +1,4 @@
+import { append, evolve } from 'ramda'
 import NavigationService from '../../navigation/NavigationService'
 
 const OPEN_TODO_EDITOR = 'OPEN_TODO_EDITOR'
@@ -27,14 +28,14 @@ const todos = (state = INITIAL_STATE, action) => {
     case ADD_TODO: {
       const { title, content } = action
       const id = state.todos.length + 1
-      return [
+      return {
         ...state,
-        {
+        todos: append({
           id,
           title,
           content
-        }
-      ]
+        }, state.todos)
+      }
     }
     case OPEN_TODO_EDITOR: {
       const { id } = action
@@ -44,10 +45,7 @@ const todos = (state = INITIAL_STATE, action) => {
     case SET_TITLE: {
       return {
         ...state,
-        editTodo: {
-          ...state.editToo,
-          title: action.title
-        }
+        editTodo: evolve({ title: action.title }, state.editTodo)
       }
     }
     default:
