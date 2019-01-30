@@ -1,14 +1,13 @@
 import React from 'react'
 import Todo from './Todo'
 
-const TodoList = ({ todos }) => todos.map(todo => {
-  const { id } = todo
+const TodoList = ({ todos }) => todos.map(({ id, title, content }) => {
   return (
     <Todo
       onPress={ () => {} /*openTodoEditor(id)*/ }
       key={ id }
-      title={ todo.title }
-      content={ todo.content }
+      title={ title }
+      content={ content }
     />
   )
 })

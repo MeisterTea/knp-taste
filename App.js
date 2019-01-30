@@ -3,6 +3,7 @@ import { Platform, StatusBar, StyleSheet, View } from 'react-native'
 import { AppLoading, Asset, Font, Icon } from 'expo'
 import { Provider } from 'react-redux'
 import AppNavigator from './navigation/AppNavigator'
+import NavigationService from './navigation/NavigationService'
 import store from './store'
 
 export default class App extends Component {
@@ -24,7 +25,11 @@ export default class App extends Component {
         <Provider store={ store }>
           <View style={ styles.container }>
             {Platform.OS === 'ios' && <StatusBar barStyle="default" />}
-            <AppNavigator />
+            <AppNavigator
+              ref={ navigatorRef => {
+                NavigationService.setTopLevelNavigator(navigatorRef)
+              } }
+            />
           </View>
         </Provider>
       )
